@@ -1,0 +1,352 @@
+/* Reset & Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Matching Hospital Background Image */
+body {
+  background-image: url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #1e293b;
+  line-height: 1.6;
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Soft Translucent Overlay for Readability */
+.page-overlay {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(240, 249, 255, 0.88), rgba(224, 242, 254, 0.85));
+  z-index: -1;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header & Navigation Tabs */
+.navbar {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #cbd5e1;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(15, 23, 42, 0.05);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 20px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: #0f172a;
+}
+
+.brand-icon {
+  background: #0284c7;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand h1 {
+  font-size: 1.25rem;
+  color: #0f172a;
+}
+
+.brand p {
+  font-size: 0.78rem;
+  color: #64748b;
+}
+
+.nav-tabs {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.tab-link {
+  text-decoration: none;
+  color: #334155;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.tab-link:hover {
+  background: #e0f2fe;
+  color: #0284c7;
+}
+
+.helpline-btn {
+  text-decoration: none;
+  background: #dc2626;
+  color: #ffffff;
+  font-weight: 700;
+  padding: 9px 16px;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.helpline-btn:hover {
+  background: #b91c1c;
+}
+
+/* Main Content Layout */
+.main-content {
+  padding-top: 32px;
+  padding-bottom: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+/* Hero Banner */
+.hero-card {
+  background: linear-gradient(120deg, rgba(12, 74, 110, 0.92), rgba(13, 148, 136, 0.88)),
+              url('https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=1400&q=80') center/cover;
+  color: #ffffff;
+  padding: 44px 36px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.12);
+}
+
+.hero-content {
+  max-width: 650px;
+}
+
+.badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.hero-card h2 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.hero-card p {
+  font-size: 1.05rem;
+  color: #e0f2fe;
+  margin-bottom: 24px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Grids */
+.auth-grid,
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+/* Frosted Glass Cards */
+.glass-card {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.06);
+}
+
+.glass-card h3 {
+  font-size: 1.35rem;
+  color: #0f172a;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  color: #64748b;
+  font-size: 0.92rem;
+  margin-bottom: 20px;
+}
+
+/* Forms */
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+  color: #334155;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 11px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  background: #ffffff;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #0284c7;
+  box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 11px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: transform 0.15s, background 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn-primary {
+  background: #0284c7;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background: #0369a1;
+}
+
+.btn-teal {
+  background: #0d9488;
+  color: #ffffff;
+}
+
+.btn-teal:hover {
+  background: #0f766e;
+}
+
+.btn-outline {
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+
+.btn-outline:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.full-width {
+  width: 100%;
+}
+
+/* Directions List */
+.info-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.info-list li {
+  background: #f8fafc;
+  padding: 12px 14px;
+  border-left: 4px solid #0284c7;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+/* Emergency Help Line Card */
+.emergency-card {
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+  color: #ffffff;
+  border-radius: 16px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.15);
+}
+
+.badge-light {
+  background: #dc2626;
+  color: #ffffff;
+  width: fit-content;
+}
+
+.emergency-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.emergency-card p {
+  color: #cbd5e1;
+  margin-bottom: 20px;
+}
+
+.emergency-number {
+  display: inline-block;
+  background: #ffffff;
+  color: #dc2626;
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-decoration: none;
+  padding: 14px 22px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.small-note {
+  font-size: 0.82rem;
+  color: #94a3b8;
+  margin-bottom: 0 !important;
+}
+
+/* Footer */
+.footer {
+  background: rgba(15, 23, 42, 0.95);
+  color: #cbd5e1;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Care-Plus Hospital | Patient Portal & Emergency Care</title>
+  <!-- Links your external CSS file -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Background Overlay -->
+  <div class="page-overlay"></div>
+
+  <!-- Top Navigation Header -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#overview" class="brand">
+        <span class="brand-icon">+</span>
+        <div>
+          <h1>Care-Plus Hospital</h1>
+          <p>Compassionate Modern Healthcare</p>
+        </div>
+      </a>
+
+      <nav class="nav-tabs">
+        <a href="#overview" class="tab-link">Overview</a>
+        <a href="#login" class="tab-link">Log In</a>
+        <a href="#signup" class="tab-link">Sign Up</a>
+        <a href="#directions" class="tab-link">Directions</a>
+        <a href="tel:0710070080" class="helpline-btn">
+          📞 Help Line: 0710070080
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container main-content">
+    
+    <!-- Hero Banner -->
+    <section id="overview" class="hero-card">
+      <div class="hero-content">
+        <span class="badge">24/7 Emergency & Outpatient Care</span>
+        <h2>Your Health, Our Priority at Care-Plus Hospital</h2>
+        <p>
+          Access your medical records, book specialist appointments, find our campus, 
+          or reach our 24/7 emergency dispatch team immediately.
+        </p>
+        <div class="hero-actions">
+          <a href="#login" class="btn btn-primary">Patient Log In</a>
+          <a href="#signup" class="btn btn-outline">Create Account</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Log In & Sign Up Grid -->
+    <section class="auth-grid">
+      <!-- Log In Card -->
+      <div id="login" class="glass-card">
+        <h3>Patient Log In</h3>
+        <p class="subtitle">Access lab results, prescriptions, and appointments.</p>
+        <form action="#" method="POST">
+          <div class="form-group">
+            <label for="login-email">Email or Patient ID</label>
+            <input type="text" id="login-email" placeholder="patient@careplus.com" required />
+          </div>
+          <div class="form-group">
+            <label for="login-password">Password</label>
+            <input type="password" id="login-password" placeholder="••••••••" required />
+          </div>
+          <button type="submit" class="btn btn-primary full-width">Log In</button>
+        </form>
+      </div>
+
+      <!-- Sign Up Card -->
+      <div id="signup" class="glass-card">
+        <h3>New Patient Sign Up</h3>
+        <p class="subtitle">Register online for faster check-ins and digital care.</p>
+        <form action="#" method="POST">
+          <div class="form-group">
+            <label for="signup-name">Full Name</label>
+            <input type="text" id="signup-name" placeholder="Jane Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="signup-phone">Phone Number</label>
+            <input type="tel" id="signup-phone" placeholder="0712 345 678" required />
+          </div>
+          <div class="form-group">
+            <label for="signup-password">Create Password</label>
+            <input type="password" id="signup-password" placeholder="Create a strong password" required />
+          </div>
+          <button type="submit" class="btn btn-teal full-width">Create Account</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Directions & Help Line Grid -->
+    <section class="info-grid">
+      <!-- Directions Card -->
+      <div id="directions" class="glass-card">
+        <h3>Hospital Directions</h3>
+        <p class="subtitle">Easy access by private vehicle, taxi, or public transit.</p>
+        <ul class="info-list">
+          <li><strong>Main Campus:</strong> Care-Plus Medical Avenue, Hospital Road</li>
+          <li><strong>Emergency Entrance:</strong> North Wing Gate B (Open 24/7)</li>
+          <li><strong>Outpatient Visiting Hours:</strong> Daily, 8:00 AM – 8:00 PM</li>
+          <li><strong>Parking:</strong> Free patient and visitor parking at Basement P1 & P2</li>
+        </ul>
+      </div>
+
+      <!-- Help Line Card -->
+      <div id="helpline" class="emergency-card">
+        <span class="badge badge-light">24/7 Dispatch & Triage</span>
+        <h3>Emergency & Patient Help Line</h3>
+        <p>
+          Need urgent medical advice, ambulance dispatch, or appointment assistance? 
+          Our nurses and support staff are available around the clock.
+        </p>
+        <a href="tel:0710070080" class="emergency-number">📞 0710070080</a>
+        <p class="small-note">Tap the number above to call directly from your phone.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 Care-Plus Hospital. All rights reserved. | 24/7 Help Line: <strong>0710070080</strong></p>
+  </footer>
+</body>
+</html>
